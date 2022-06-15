@@ -1,0 +1,50 @@
+/**
+ *
+ * @author Rian Gustavo Quintanilha de Aquino e Diogo Santos Teixeira
+ * 
+ * Agora, desenvolva um programa capaz de testar a classe e os métodos desenvolvidos no
+exercício anterior.
+ */
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("LP1I3 - Trabalho Prático 03: Classe Hora\n");
+        
+        System.out.println(" > 1. Construtor por parâmetros");
+        Hora exemplo1 = new Hora(10, 30, 00);
+        
+        System.out.println("    - Horário inicial: ..... " + exemplo1.getHora1());
+        exemplo1.setHora(11);
+        System.out.println("    - Alteração de Hora: ... " + exemplo1.getHora1());
+        exemplo1.setMin(15);
+        System.out.println("    - Alteração de Minutos : " + exemplo1.getHora1());
+        exemplo1.setSeg(30);
+        System.out.println("    - Alteração de Segundos: " + exemplo1.getHora1());
+        System.out.println("    + Formato Americano: ... " + exemplo1.getHora2());
+        System.out.println("    + Total de Segundos: ... " + exemplo1.getSegundos());
+        
+        System.out.println();
+        
+        System.out.println(" > 2. Construtor sem parâmetros (Entrada de dados pelo usuário)");
+        Hora exemplo2 = new Hora();
+        
+        System.out.println("    - Horário inicial: ..... " + exemplo2.getHora1());
+        
+        System.out.println();
+        System.out.println("    - Alteração de Hora: ... ");
+        exemplo2.setHora();
+        
+        System.out.println();
+        System.out.println("    - Alteração de Minutos : ");
+        exemplo2.setMin();
+        
+        System.out.println();
+        System.out.println("    - Alteração de Segundos: ");
+        exemplo2.setSeg();
+        
+        System.out.println();
+        System.out.println("    - Horário Final: ..... " + exemplo2.getHora1());
+        System.out.println("    + Formato Americano: ... " + exemplo2.getHora2());
+        System.out.println("    + Total de Segundos: ... " + exemplo2.getSegundos());
+    }
+}
